@@ -41,4 +41,11 @@ div#slider figure {
   font-size: 0;
   animation: 40s slidy infinite; }
 
+#fab {
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  #fab {
+    display: block; } }
+
 /*# sourceMappingURL=style.css.map */
