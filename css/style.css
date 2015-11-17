@@ -1,6 +1,8 @@
 #top {
   background-image: url(../img/logo.jpg);
-  background-position: center; }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 @keyframes slidy {
   0% {
@@ -23,7 +25,7 @@
     left: -400%; } }
 div#slider {
   overflow: hidden;
-  opacity: 0.6;
+  opacity: 0.4;
   max-height: 600px; }
 
 div#slider figure img {
