@@ -35,6 +35,9 @@
     left: -300%; }
   100% {
     left: -400%; } }
+.link:hover {
+  background-color: #D86464; }
+
 div#slider {
   overflow: hidden;
   opacity: 0.4;
@@ -55,6 +58,12 @@ div#slider figure {
 
 #fab {
   display: none; }
+
+.vd {
+  text-align: center; }
+
+.cn {
+  text-align: center; }
 
 @media screen and (max-width: 1000px) {
   #fab {

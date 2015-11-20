@@ -19,7 +19,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
           <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
-            
+       <script type="text/javascript">
+         $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+       </script>    
 </head>
 <body >
 
@@ -27,10 +31,10 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo"><img src="img/logo.jpg" height="60" width="100"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down" >
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Work</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Our Work</a></li>
+        <li class="link"><a href="#">Our Team</a></li>
+        <li class="link"><a href="#">Contact</a></li>
       </ul>
 
     </div>
@@ -64,8 +68,40 @@
        <p class="headline">Let's create something beautiful together.</p>
        <hr class="line" />
      </div>
-
+ <div class="row">
+<div class="col s1">.</div>
+      <div class="cn col s12 m3">
+        <!-- Promo Content 1 goes here -->
+        <h1><i class="fa fa-tachometer"></i></h1>
+        <h4>Lorem Ipsum Dor</h4>
+        <p>Lorem ipsum dolor sit amet, semper tortor. Mauris montes aenean dolor nibh nulla proin suscipit </p>
+      </div>
+      <div class="cn col s12 m4">
+        <!-- Promo Content 2 goes here -->
+        <h1><i class="fa fa-industry"></i></h1>
+        <h4>Faucibus id</h4>
+        <p>Lorem ipsum dolor sit amet, semper tortor. Mauris montes aenean dolor nibh nulla proin suscipit.Mollis non nibh aliquam integer neque </p>
+      </div>
+      <div class="cn col s12 m3">
+        <!-- Promo Content 3 goes here -->
+        <h1><i class="fa fa-optin-monster"></i></h1>
+        <h4>Pede donec</h4>
+        <p>Lorem ipsum dolor sit amet, semper tortor. Mauris montes aenean dolor nibh nulla proin suscipit </p>
+      </div>
+    </div>
    </section> 
-        
+   <div class="vd">
+   <video class="responsive-video" controls>
+   <source src="bg/clip.webm" type="video/webm">
+        <source src="bg/clip.mp4" type="video/mp4">
+        <source src="bg/clip.ogv" type="video/ogg">
+  </video>
+  </div>
+      <div class="input-field row">
+        <form class="col s4">
+          <input type="email" class="validate" id="subscribe"/>
+           <label for="subscribe">enter your email address</label>
+        </form>
+      </div>  
 </body>
 </html>
