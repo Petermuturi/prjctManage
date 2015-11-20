@@ -18,7 +18,7 @@
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-          <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+         <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
        <script type="text/javascript">
          $(document).ready(function(){
       $('.parallax').parallax();
@@ -69,7 +69,7 @@
        <hr class="line" />
      </div>
  <div class="row">
-<div class="col s1">.</div>
+<div class="col s1 zero">.</div>
       <div class="cn col s12 m3">
         <!-- Promo Content 1 goes here -->
         <h1><i class="fa fa-tachometer"></i></h1>
@@ -91,7 +91,7 @@
     </div>
    </section> 
    <div class="vd">
-   <video width="853" height="480" class="responsive-video" controls>
+   <video width="653" height="480" class="responsive-video" controls>
    <source src="bg/clip.webm" type="video/webm">
         <source src="bg/clip.mp4" type="video/mp4">
         <source src="bg/clip.ogv" type="video/ogg">
@@ -101,13 +101,50 @@
     <p class="cn">A varius libero dolor purus ligula, leo interdum, dolor malesuada ut gravida, pellentesque lacus mollis.</p>
   </div>
       <div class="input-field row vd vf">
-      <div class="col s3">.</div>
-        <form class="col s5">
-          <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" class="validate"/>
-       <input class="btn btn-default snd waves-brown" type="submit" value="SUBSCRIBE TO OUR NEWSLETTERS" style="padding:left:14px;padding-right:14px;padding-top:0px;border-radius:0px;text-align:center;" />
+      <div class="col s12 m3 zero">.</div>
+        <form class="col s12 m6" action="//formspree.io/pmuturi65@gmail.com" method="POST" onsubmit="return subscription();"
+        name="subscribe">
+          <input type="email" id="email" name="email" style="color:#560E17; border-bottom:1px solid;" placeholder="ENTER YOUR EMAIL ADDRESS" class="validate"/>
+       <input class="btn  waves-effect waves-red"onclick="$('.sh').show();" style="background:url(img/logo.jpg); border:none;" type="submit" value="SUBSCRIBE TO OUR NEWSLETTERS" />
       <input type="hidden" name="_next" value="thanks.html" />
-      <input type="hidden" name="_subject" value="Message from your website" />
+      <input type="hidden" name="_subject" value="New subscriber from Lavish_Affairs" />
+      <div  class="sh progress brown"style="width:200px;margin-left:230px;">
+      <div  class="sh indeterminate amber lighten-4"></div>
+  </div>
         </form>
+      </div>
+      <div class="footer">
+      <div class="row">
+        
+      </div>         
       </div>  
+      <script>
+      $(".sh").hide();
+      function subscription(){
+        var email = document.subscribe.email;
+        if (email.value === "")
+    {
+        window.alert("Please provide your address.");
+        email.focus();
+         $(".sh").hide();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+         $(".sh").hide();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+         $(".sh").hide();
+        return false;
+    }
+    return true;
+      }
+      </script>
 </body>
 </html>

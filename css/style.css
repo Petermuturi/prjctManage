@@ -16,6 +16,22 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
+.zero {
+  opacity: 0; }
+
+.vf {
+  background-color: #B29885;
+  padding-bottom: 20px; }
+
+.footer {
+  background-color: #392719;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white; }
+
+.snd {
+  background-image: url(..img/logo.jpg); }
+
 @keyframes slidy {
   0% {
     left: 0%; }
