@@ -1,4 +1,16 @@
+* {
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+.headline {
+  font-size: 50px;
+  text-align: center; }
+
+.line {
+  margin-top: -40px;
+  width: 1000px; }
+
 #top {
+  position: relative;
   background-image: url(../img/logo.jpg);
   background-position: center;
   background-size: cover;
@@ -30,7 +42,7 @@ div#slider {
 
 div#slider figure img {
   width: 20%;
-  float: inherit; }
+  float: left; }
 
 div#slider figure {
   position: relative;
@@ -46,6 +58,13 @@ div#slider figure {
 
 @media screen and (max-width: 1000px) {
   #fab {
-    display: block; } }
+    display: block; }
+
+  .up {
+    display: none; }
+
+  .line {
+    margin-top: -40px;
+    width: 350px; } }
 
 /*# sourceMappingURL=style.css.map */
