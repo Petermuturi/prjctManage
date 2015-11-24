@@ -32,16 +32,16 @@
       <a href="#" class="brand-logo"><img src="img/logo.jpg" height="60" width="100"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down" >
         <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="#">Our Work</a></li>
-        <li class="link"><a href="#">Our Team</a></li>
-        <li class="link"><a href="#">Contact</a></li>
+        <li class="link"><a href="about.html">About us</a></li>
+        <li class="link"><a href="#">Our work</a></li>
+        <li class="link"><a href="#">Our team</a></li>
       </ul>
     </div>
   </nav>
 <div class="bout">  
 </div>
 <div>
-  <p class="bt">Contact us<span style="margin-left:90px;font-size:14px;color:#B29885;">required *</span></p>
+  <p class="bt">Contact us<span style="margin-left:20px;font-size:14px;color:#B29885;">required *</span></p>
   <hr class="line hd" />
   <div class="row cs">
 <div class="col s2 zero" style="margin-right:-25px;">.</div>
@@ -49,7 +49,7 @@
   <i class="fa fa-envelope col s1" style="font-size:20px;color:#B29885;margin-right:-72px;"></i>
   <hr class=" col s4" />
   </div>
- <div class="form row">
+ <div class="row">
  <div class="col s12 m2 zero">.</div>
    <form class="col s12 m8 row"  action="//formspree.io/pmuturi65@gmail.com"
           method="POST" onsubmit="return form();" name="contactForm">         
@@ -77,11 +77,28 @@
           <textarea id="textarea" type="textarea" name="message" class="materialize-textarea" length="100"></textarea>
           <label style="color:#B29885;"  for="textarea">Your message *</label>
         </div>
-      <input class="btn waves-effect waves-red" type="submit" value="SEND" style="background:url(img/logo.jpg); border:none;color:white;" />
-      <input type="hidden" name="_next" value="thanks.html" />
-      <input type="hidden" name="_subject" value="Message from your website" />
+              <div class="row">
+      <div class="col s4 zero">.</div>
+      <div class="col s4" style="margin-top:12px; text-align:center;">
+      <input class="btn waves-effect waves-red" type="submit" onclick="$('.hs').show();" value="SEND" style="background:url(img/logo.jpg); border:none;color:white;" />
+            <input type="hidden" name="_next" value="thanks.html" />
+      <input type="hidden" name="_subject" value="Message Lavish_Affairs Contact" />
+  </div>
+  </div>      
+            <div class="row">
+      <div class="col s4 zero">.</div>
+      <div class="col s4" style="margin-top:12px; margin-bottom:-12px;">
+      <div  class="hs progress brown">
+      <div  class="hs indeterminate amber lighten-4"></div>
+  </div>
+  </div>
+  </div>
    </form>
  </div>
+ <div class="hd" style="margin-left:-62px;">
+   <p style="text-align:center;">We are located in <a style="color:#B29885;" href="https://www.google.com/maps/place/Nairobi,+Kenya/@-1.3044564,36.7073081,11z/data=!3m1!4b1!4m2!3m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c">Nairobi, Kenya</a> <span class="fa fa-map-marker"style="font-size:20px;margin-right:-72px;color:#B29885;"></span></p>
+ </div>
+ <div class="lav">
 <p class="bs">Our location</p>
 <hr class="line hd" />
 <div class="row cs">
@@ -90,7 +107,15 @@
   <i class="fa fa-map-marker col s1" style="font-size:20px;margin-right:-72px;color:#B29885;"></i>
   <hr class=" col s4" />
   </div>
-  
+   <div class="row">
+ <div class="col s12 m2 zero">.</div>
+ <div class="col s12 m8 row">
+   <div class="col s12 m8 ">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:843px;'><div id='gmap_canvas' style='height:400px;width:843px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>https://www.add-map.net</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=63cce90c10cfbfe011275d8768390031f2cf83c9'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-1.2920659,36.82194619999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.2920659,36.82194619999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Lavish Affaiars</strong><br>Nairobi, Kenya<br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+  </div>
+ </div>
+ </div>
+</div>
 </div>
 	 <div id="fab" class="fixed-action-btn vertical click-to-toggle" style="bottom:45px; right: 24px;">
     <a class="btn-floating btn-large dropdown-button" style="background:url(img/logo.jpg);">
@@ -98,10 +123,10 @@
     </a>
     <ul>
       <li><a class="btn-floating red lighten-3" href="index.html" onclick="Materialize.toast('Go Home!', 4000)"><i class="fa fa-home"></i></a></li>
-      <!-- <li><a class="btn-floating blue-grey"onclick="Materialize.toast('About us!', 4000)"><i class="fa fa-info-circle"></i></a></li> -->
-      <li><a class="btn-floating blue-grey darken-2"onclick="Materialize.toast('Our work!', 4000)"><i class="fa fa-briefcase"></i></a></li>
-      <li><a class="btn-floating blue-grey lighten-4"onclick="Materialize.toast('Our team!', 4000)"><i class="fa fa-users"></i></a></li>
-       <li><a class="btn-floating cyan lighten-2"onclick="Materialize.toast('Contact us!', 4000)"><i class="fa fa-envelope"></i></a></li>
+      <li><a class="btn-floating blue-grey" href="about.html" onclick="Materialize.toast('About us!', 4000)"><i class="fa fa-info-circle"></i></a></li>
+      <li><a class="btn-floating blue-grey darken-2"href="#" onclick="Materialize.toast('Our work!', 4000)"><i class="fa fa-briefcase"></i></a></li>
+      <li><a class="btn-floating blue-grey lighten-4"href="#" onclick="Materialize.toast('Our team!', 4000)"><i class="fa fa-users"></i></a></li>
+       <!-- <li><a class="btn-floating cyan lighten-2"onclick="Materialize.toast('Contact us!', 4000)"><i class="fa fa-envelope"></i></a></li> -->
     </ul>
   </div>			
   	
@@ -112,10 +137,10 @@
         <div class="col s12 m2 zero">.</div>
         <div class="col s12 m2 lav">
           <h5>Lavish</h5>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
           <li><a href="#">Our work</a></li>
           <li><a href="#">Our team</a></li>
-          <li><a href="#">Contact us</a></li>
           
         </div>
          <div class="col s12 m2">
@@ -134,28 +159,61 @@
       <p class="cp">&#169; Copyright Lavish 2015</p>        
       </div>  
       <script>
-      $(".sh").hide();
-      function subscription(){
-        var email = document.subscribe.email;
+      $(".hs").hide();
+      function form(){
+         var firstname = document.contactForm.first;
+          var lastname = document.contactForm.last;
+        var email = document.contactForm.email;
+        var phone = document.contactForm.phone;
+    var message = document.contactForm.message;
+     if (firstname.value === "")
+    {
+        window.alert("Please enter your first name.");
+        firstname.focus();
+         $(".hs").hide();
+        return false;
+    }
+     if (lastname.value === "")
+    {
+        window.alert("Please enter your last name.");
+        lastname.focus();
+         $(".hs").hide();
+        return false;
+    }
         if (email.value === "")
     {
-        window.alert("Please provide your address.");
+        window.alert("Please provide your e-mail address.");
         email.focus();
-         $(".sh").hide();
+         $(".hs").hide();
         return false;
     }
     if (email.value.indexOf("@", 0) < 0)
     {
         window.alert("Please enter a valid e-mail address.");
         email.focus();
-         $(".sh").hide();
+         $(".hs").hide();
         return false;
     }
     if (email.value.indexOf(".", 0) < 0)
     {
         window.alert("Please enter a valid e-mail address.");
         email.focus();
-         $(".sh").hide();
+         $(".hs").hide();
+        return false;
+    }
+    if ((isNaN(phone.value)))
+    {
+        window.alert("Please enter your phone number.");
+        phone.focus();
+        $(".hs").hide();
+        return false;
+    }
+
+    if (message.value === "")
+    {
+        window.alert("Please provide a message.");
+        message.focus();
+        $(".hs").hide();
         return false;
     }
     return true;

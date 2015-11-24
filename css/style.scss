@@ -52,6 +52,7 @@ opacity:0;
 	background-color:#B29885;
 	padding-bottom: 20px;
 }
+
 .footer{
 	background-image:url(../img/back.jpg);
 	padding-top: 30px;
@@ -121,6 +122,9 @@ div#slider figure {
 .cp{
 	margin-left:12px;
 }
+#colla{
+	text-align: center;
+}
 @media screen and (max-width:1000px){
 	#fab{
 		display: block;
@@ -132,6 +136,7 @@ div#slider figure {
 	margin-top: -40px;
 	width:300px;
 }
+
 .hd{
 	opacity:1;
 }
