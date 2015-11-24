@@ -1,6 +1,30 @@
 * {
   font-family: 'Open Sans Condensed', sans-serif; }
 
+.bout {
+  background: url(../img/bout.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px; }
+
+.fm {
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px; }
+
+.hd {
+  opacity: 0; }
+
+.bt {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400; }
+
+.bs {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; }
+
 .headline {
   font-size: 50px;
   text-align: center; }
@@ -111,10 +135,20 @@ div#slider figure {
     margin-top: -40px;
     width: 300px; }
 
+  .hd {
+    opacity: 1; }
+
+  .cs {
+    display: none; }
+
   .social {
     margin-top: 0px; }
 
   .cp {
-    text-align: center; } }
+    text-align: center; }
+
+  .fm {
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
