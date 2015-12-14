@@ -70,7 +70,8 @@
   background-image: url(..img/logo.jpg); }
 
 .link:hover {
-  background-color: #51E6B5; }
+  background-color: #51E6B5;
+  border-bottom: #D9AB2B; }
 
 #fab {
   display: none; }
