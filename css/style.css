@@ -15,6 +15,9 @@
 .hd {
   opacity: 0; }
 
+.link {
+  display: inline; }
+
 .bt {
   text-align: center;
   font-size: 50px;
@@ -32,13 +35,6 @@
 .line {
   margin-top: -40px;
   width: 800px; }
-
-.top {
-  background-image: url(../img/bg.jpg);
-  padding-bottom: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
 
 .zero {
   opacity: 0; }
