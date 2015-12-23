@@ -32,9 +32,30 @@
     $('nav').css('background', 'rgba(189,144,40,' + $(this).scrollTop() / dHeight + ')');
   }
 });
-</script>     
+</script>   
+<script type="text/javascript">
+   $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+</script> 
+ <script type="text/javascript">
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script> 
 </head>
-<body >
+<body style="background-color:white;">
 <div>
   <div class="parallax-container colors" style="  background-color:rgba(0,0,0,0.5);
   height:500px;">
@@ -46,7 +67,7 @@
         <li class="link"><a class="ppl" href="#">Kind Words</a></li>
         <li class="link"><a class="ppl" href="#">Events Gallery</a></li>
         <li class="link"><a class="ppl" href="#">Blog</a></li>
-        <li class="link"><a class="ppl" href="contact.html">Contact</a></li>
+        <li class="link"><a class="ppl" href="#contact">Contact</a></li>
       </ul>
 
     </div>  
@@ -74,7 +95,7 @@
        <li><a class="btn-floating " style="background-color:#C59D2F;"href="contact.html"onclick="Materialize.toast('Contact us...', 4000)"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </div> 
-<div style="padding-top:10px;">
+<div style="padding-top:10px;" id="contact">
   <p class="bt">Connect with Lavish<span style="margin-left:20px;font-size:16px;color:#220e19;">required *</span></p>
   <hr class="line hd" />
   <div class="row cs">
@@ -130,7 +151,7 @@
    </form>
  </div>
  <div style="margin-left:-62px;">
-   <p style="text-align:center;">We are located in <a style="color:#bd9028;" href="https://www.google.com/maps/place/Nairobi,+Kenya/@-1.3044564,36.7073081,11z/data=!3m1!4b1!4m2!3m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c">Nairobi, Kenya</a> <span class="fa fa-map-marker"style="font-size:20px;margin-right:-72px;color:#220e19;"></span></p>
+   <p style="text-align:center; font-size:18px;">We are located in <a style="color:#bd9028;" href="https://www.google.com/maps/place/Nairobi,+Kenya/@-1.3044564,36.7073081,11z/data=!3m1!4b1!4m2!3m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c">Nairobi, Kenya</a> <span class="fa fa-map-marker"style="font-size:20px;margin-right:-72px;color:#220e19;"></span></p>
  </div>
 	 <div id="fab" class="fixed-action-btn vertical click-to-toggle" style="bottom:45px; right: 24px;">
     <a class="btn-floating btn-large dropdown-button" style="background:url(img/logo.jpg);">
@@ -148,10 +169,17 @@
  <svg id="topShape" style="margin-bottom:-90px;" width="100%" height="90px" fill="white" viewBox="0 0 1366 90" preserveAspectRatio="none">
                <path d="M 0.41421356,0.19566509 1366,0.05152333 1366,64.30153 550,26.30153 -0.03033009,73.726403" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
             </svg>
-<div class="parallax-container" style="height:400px;">
-      <div class="parallax" style="rgba(189,144,40,0.8);"><img src="img/img5.jpg" class="sb"></div>
+<div class="parallax-container" style="height:530px;">
+      <div class="parallax"><img src="img/img4.jpg" style="opacity:0.7" class="blr"></div>
             <div class="vd vf">
-
+            <p style="color:#e3c57e; font-size:60px; margin-bottom:-40px;font-family: 'Great Vibes', cursive;">Our social media</p>
+                    <div class="row">
+            <div class="col s2 zero">.</div>
+<div class="fd col s2"><a class="tooltipped" href="#!" data-position="top" data-delay="50" data-tooltip="Like us on Facebook"><i class="socl fa fa-facebook"></i></a></div>
+<div class="fd col s2"><a class="tooltipped" href="#!" data-position="top" data-delay="50" data-tooltip="Follow us on Twitter"><i class="socl fa fa-twitter"></i></a></div>
+<div class="fd col s2"><a class="tooltipped" href="#!" data-position="top" data-delay="50" data-tooltip="Follow us on Instagram"><i class="socl fa fa-instagram"></i></a></div>
+<div class="fd col s2"><a class="tooltipped" href="#!" data-position="top" data-delay="50" data-tooltip="Pinterest our events"><i class="socl fa fa-pinterest"></i></a></div>
+</div>
                <svg  style="margin-top:70px;" class="bottomShape" width="100%" height="90px" fill="#220e19" viewBox="0 0 1366 90" preserveAspectRatio="none">
                <path d="m 0.274329,73.862183 1366,0 L 1366,9.3475355 900.35901,39.96681 -0.00563127,0.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
             </svg>
