@@ -18,6 +18,11 @@
 .link {
   display: inline; }
 
+.ppl {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .bt {
   text-align: center;
   font-size: 50px;
@@ -40,12 +45,24 @@
   opacity: 0; }
 
 .vf {
-  padding-top: 12px;
-  background-color: #B29885;
+  padding-top: 82px;
   padding-bottom: 20px; }
 
+.blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px); }
+
+.colors {
+  background: linear-gradient(to right, rgba(34, 14, 25, 0.5) 0%, rgba(34, 14, 25, 0.5) 50%, rgba(189, 144, 40, 0.3) 50%, rgba(189, 144, 40, 0.3) 100%); }
+
+.sb {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-filter: sepia(2);
+  filter: sepia(2); }
+
 .footer {
-  background-image: url(../img/back.jpg);
+  background-color: #220e19;
   padding-top: 30px;
   padding-bottom: 1px;
   color: white; }
@@ -55,19 +72,26 @@
       color: white; }
     .footer li a:hover {
       text-decoration: underline;
-      color: #DB5467; }
+      color: #e3c57e; }
   .footer a {
     color: white; }
   .footer a:hover {
     text-decoration: underline;
-    color: #DB5467; }
+    color: #e3c57e; }
+
+.go {
+  padding-top: 10px;
+  padding-bottom: 20px; }
 
 .snd {
   background-image: url(..img/logo.jpg); }
 
+.link:visited {
+  border-bottom: #D9AB2B 2px solid; }
+
 .link:hover {
-  background-color: #51E6B5;
-  border-bottom: #D9AB2B; }
+  background-color: #571c33;
+  border-bottom: #D9AB2B 2px solid; }
 
 #fab {
   display: none; }
@@ -87,6 +111,16 @@
 #colla {
   text-align: center; }
 
+.slide {
+  display: block;
+  font-family: 'Great Vibes', cursive;
+  color: #bd9028;
+  margin-top: -5px;
+  font-size: 70px; }
+
+#top {
+  margin-top: 5px; }
+
 @media screen and (max-width: 1000px) {
   #fab {
     display: block; }
@@ -97,6 +131,27 @@
   .line {
     margin-top: -40px;
     width: 300px; }
+
+  .colors {
+    height: 40px; }
+
+  .go {
+    background-color: white;
+    margin-top: -60px; }
+
+  #top {
+    margin-top: 100px; }
+
+  .nope {
+    height: 100px;
+    width: 380px; }
+
+  .slide {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    color: #bd9028;
+    margin-top: -15px;
+    font-size: 35px; }
 
   .hd {
     opacity: 1; }

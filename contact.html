@@ -19,35 +19,69 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
          <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+         <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
        <script type="text/javascript">
          $(document).ready(function(){
       $('.parallax').parallax();
     });
-       </script>    
+       </script> 
+        <script type="text/javascript">
+ $(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+    $('nav').css('background', 'rgba(189,144,40,' + $(this).scrollTop() / dHeight + ')');
+  }
+});
+</script>     
 </head>
 <body >
-
-    <nav class="up"style="background:url(img/logo.jpg);">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img src="img/logo.jpg" height="60" width="100"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down" >
-        <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="about.html">About us</a></li>
-        <li class="link"><a href="#">Our work</a></li>
-        <li class="link"><a href="#">Our team</a></li>
-      </ul>
-    </div>
-  </nav>
-<div class="bout">  
-</div>
 <div>
-  <p class="bt">Contact us<span style="margin-left:20px;font-size:14px;color:#B29885;">required *</span></p>
+  <div class="parallax-container colors" style="  background-color:rgba(0,0,0,0.5);
+  height:500px;">
+  <nav style="position:fixed; background-color:rgba(0,0,0,0); box-shadow:none;">
+   <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img src="img/title.png" height="70" width="110"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" >
+      <li class="link"><a class="ppl" href="index.html">Lavish</a></li>
+        <li class="link"><a class="ppl" href="#">Kind Words</a></li>
+        <li class="link"><a class="ppl" href="#">Events Gallery</a></li>
+        <li class="link"><a class="ppl" href="#">Blog</a></li>
+        <li class="link"><a class="ppl" href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>  
+</nav>   
+      <div class="parallax"><img src="img/bg2.jpg" class="blur"></div> 
+  <div style="text-align:center;  padding-top:150px;">
+    <img src="img/kj.png" class="nope" />
+<p class="slide">Conta<span style="color:#220e19;font-family: 'Great Vibes', cursive;">ct.Us.</span></p>
+  </div>
+   <svg id="top" class="bottomShape" width="100%" height="90px" fill="white" viewBox="0 0 1366 90" preserveAspectRatio="none">
+               <path d="m 0.274329,73.862183 1366,0 L 1366,9.3475355 900.35901,39.96681 -0.00563127,0.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+    </div>
+</div>
+
+      <div id="fab" class="fixed-action-btn vertical click-to-toggle" style="bottom:45px; right: 24px;">
+    <a class="btn-floating btn-large dropdown-button purple">
+      <i class="large mdi-navigation-menu"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating" style="background-color:#C59D2F;"href="index.html" onclick="Materialize.toast('Already Home!', 4000)"><i class="fa fa-home"></i></a></li>
+      <li><a class="btn-floating " style="background-color:#C59D2F;"href="about.html"onclick="Materialize.toast('About us...', 4000)"><i class="fa fa-info-circle"></i></a></li>
+      <li><a class="btn-floating " style="background-color:#C59D2F;"href="#"onclick="Materialize.toast('Our work...', 4000)"><i class="fa fa-briefcase"></i></a></li>
+      <li><a class="btn-floating " style="background-color:#C59D2F;"href="#"onclick="Materialize.toast('Our team...', 4000)"><i class="fa fa-users"></i></a></li>
+       <li><a class="btn-floating " style="background-color:#C59D2F;"href="contact.html"onclick="Materialize.toast('Contact us...', 4000)"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+  </div> 
+<div style="padding-top:10px;">
+  <p class="bt">Connect with Lavish<span style="margin-left:20px;font-size:16px;color:#220e19;">required *</span></p>
   <hr class="line hd" />
   <div class="row cs">
-<div class="col s2 zero" style="margin-right:-25px;">.</div>
-  <hr class="col s4">
-  <i class="fa fa-envelope col s1" style="font-size:20px;color:#B29885;margin-right:-72px;"></i>
-  <hr class=" col s4" />
+<div class="col s3 zero" style="margin-right:-25px;">.</div>
+  <hr class="col s3">
+  <i class="fa fa-envelope col s1" style="font-size:20px;color:#220e19;margin-right:-72px;"></i>
+  <hr class=" col s3" />
   </div>
  <div class="row">
  <div class="col s12 m2 zero">.</div>
@@ -55,32 +89,32 @@
           method="POST" onsubmit="return form();" name="contactForm">         
           <div class="input-field col s6">
      <input  id="first" type="text" class="validate">
-          <label style="color:#B29885;" for="first">First Name *</label>
+          <label style="color:#220e19;" for="first">First Name *</label>
           </div>
 
           <div class="input-field col s6">
           <input id="last" type="text" class="validate">
-          <label style="color:#B29885;" for="last">Last Name *</label>
+          <label style="color:#220e19;" for="last">Last Name *</label>
           </div>
           
                <div class="input-field col s6">
           <input id="email" type="email" name="email" class="validate">
-          <label style="color:#B29885;"  for="email">Email *</label>
+          <label style="color:#220e19;"  for="email">Email *</label>
         </div>
 
            <div class="input-field col s6">
           <input id="phone" type="text" name="phone" class="validate">
-          <label style="color:#B29885;"  for="phone">Phone number</label>
+          <label style="color:#220e19;"  for="phone">Phone number</label>
         </div>   
 
           <div class="input-field col s12">
           <textarea id="textarea" type="textarea" name="message" class="materialize-textarea" length="100"></textarea>
-          <label style="color:#B29885;"  for="textarea">Your message *</label>
+          <label style="color:#220e19;"  for="textarea">Your message *</label>
         </div>
               <div class="row">
       <div class="col s4 zero">.</div>
       <div class="col s4" style="margin-top:12px; text-align:center;">
-      <input class="btn waves-effect waves-red" type="submit" onclick="$('.hs').show();" value="SEND" style="background:url(img/logo.jpg); border:none;color:white;" />
+      <input class="btn waves-effect waves-purple" type="submit" onclick="$('.hs').show();" value="SEND" style="background-color:#220e19; border:none;color:white;" />
             <input type="hidden" name="_next" value="thanks.html" />
       <input type="hidden" name="_subject" value="Message Lavish_Affairs Contact" />
   </div>
@@ -88,35 +122,16 @@
             <div class="row">
       <div class="col s4 zero">.</div>
       <div class="col s4" style="margin-top:12px; margin-bottom:-12px;">
-      <div  class="hs progress brown">
+      <div  class="hs progress purple">
       <div  class="hs indeterminate amber lighten-4"></div>
   </div>
   </div>
   </div>
    </form>
  </div>
- <div class="hd" style="margin-left:-62px;">
-   <p style="text-align:center;">We are located in <a style="color:#B29885;" href="https://www.google.com/maps/place/Nairobi,+Kenya/@-1.3044564,36.7073081,11z/data=!3m1!4b1!4m2!3m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c">Nairobi, Kenya</a> <span class="fa fa-map-marker"style="font-size:20px;margin-right:-72px;color:#B29885;"></span></p>
+ <div style="margin-left:-62px;">
+   <p style="text-align:center;">We are located in <a style="color:#bd9028;" href="https://www.google.com/maps/place/Nairobi,+Kenya/@-1.3044564,36.7073081,11z/data=!3m1!4b1!4m2!3m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c">Nairobi, Kenya</a> <span class="fa fa-map-marker"style="font-size:20px;margin-right:-72px;color:#220e19;"></span></p>
  </div>
- <div class="lav">
-<p class="bs">Our location</p>
-<hr class="line hd" />
-<div class="row cs">
-<div class="col s2 zero" style="margin-right:-25px;">.</div>
-  <hr class="col s4">
-  <i class="fa fa-map-marker col s1" style="font-size:20px;margin-right:-72px;color:#B29885;"></i>
-  <hr class=" col s4" />
-  </div>
-   <div class="row">
- <div class="col s12 m2 zero">.</div>
- <div class="col s12 m8 row">
-   <div class="col s12 m8 ">
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:843px;'><div id='gmap_canvas' style='height:400px;width:843px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>https://www.add-map.net</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=63cce90c10cfbfe011275d8768390031f2cf83c9'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-1.2920659,36.82194619999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.2920659,36.82194619999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Lavish Affaiars</strong><br>Nairobi, Kenya<br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-  </div>
- </div>
- </div>
-</div>
-</div>
 	 <div id="fab" class="fixed-action-btn vertical click-to-toggle" style="bottom:45px; right: 24px;">
     <a class="btn-floating btn-large dropdown-button" style="background:url(img/logo.jpg);">
       <i class="large mdi-navigation-menu"></i>
@@ -130,8 +145,18 @@
     </ul>
   </div>			
   	
-  
+ <svg id="topShape" style="margin-bottom:-90px;" width="100%" height="90px" fill="white" viewBox="0 0 1366 90" preserveAspectRatio="none">
+               <path d="M 0.41421356,0.19566509 1366,0.05152333 1366,64.30153 550,26.30153 -0.03033009,73.726403" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+<div class="parallax-container" style="height:400px;">
+      <div class="parallax" style="rgba(189,144,40,0.8);"><img src="img/img5.jpg" class="sb"></div>
+            <div class="vd vf">
 
+               <svg  style="margin-top:70px;" class="bottomShape" width="100%" height="90px" fill="#220e19" viewBox="0 0 1366 90" preserveAspectRatio="none">
+               <path d="m 0.274329,73.862183 1366,0 L 1366,9.3475355 900.35901,39.96681 -0.00563127,0.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+      </div>
+    </div>
       <div class="footer">
       <div class="row">
         <div class="col s12 m2 zero">.</div>
