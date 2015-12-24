@@ -156,6 +156,11 @@ opacity:0;
 #top{
 	margin-top: 5px;
 }
+.bls{
+	font-size:60px;
+	color:#220e19;
+	font-family: 'Great Vibes', cursive;
+}
 @media screen and (max-width:1000px){
 	#fab{
 		display: block;
@@ -166,6 +171,9 @@ opacity:0;
 	.line{
 	margin-top: -40px;
 	width:300px;
+}
+.bls{
+	font-size: 42px;
 }
 .socl{
 	font-size: 14px;
