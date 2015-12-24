@@ -18,6 +18,20 @@
 .link {
   display: inline; }
 
+.mpt {
+  font-size: 16px; }
+
+.tt {
+  font-size: 24px;
+  font-weight: 500;
+  color: #571c33; }
+
+.temp {
+  color: #bd9028; }
+
+.temp:hover {
+  color: #984d65; }
+
 .ppl {
   font-size: 13px;
   color: white;
