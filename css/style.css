@@ -79,6 +79,7 @@
   filter: blur(4px); }
 
 .footer {
+  font-size: 14px;
   background-color: #220e19;
   padding-top: 20px;
   padding-bottom: 1px;
